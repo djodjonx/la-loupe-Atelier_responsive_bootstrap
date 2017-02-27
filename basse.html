@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,62 +19,487 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<header>
-    <div class="container header">
-        <div class="row header">
-            <div class="col-xs-10 col-md-4">
-                <h1>Basse and Co.</h1>
-            </div>
-            <div class="col-xs-0 col-md-5" id="slogan">
-                <h2>Grave mais pas que!!!</h2>
-            </div>
-            <div class="pull-col-sx-2 col-md-3">
-                <a href="#" title="menu" id="menu1">Menu</a>
-            </div>
-        </div>
-    </div>
-
-</header>
 
 <body>
-  <div class="slide.bs.carousel">
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+                    <a class="navbar-brand" href="#">
+                        <img alt="brand" src="logo/logo2.png">
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav hidden-xs">
+                        <li class="navbar-text  hidden-xs slogan">
+                            Pour tout les styles, à prix malin
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <button type="button" class="btn btn-default navbar-btn">Panier <span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span></button></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- end of navbar -->
+    </header>
 
-  </div>
-  <div class="container body">
-    <div class="row body">
-      <div class="col-xs-12 col-md-3 image"><a href="#" title="basse1" ><img src="image/basseibanez.jpg" alt="ibanez" class="image"></a></div>
-      <div class="col-xs-12 col-md-3 image"><a href="#" title="basse2"><img src="image/bassejackson.jpg" alt="jackon" class="image"></a></div>
-      <div class="col-xs-12 col-md-3 image"><a href="#" title="basse3"><img src="image/basseprecision.jpg" alt="precision" class="image"></a></div>
-      <div class="col-xs-12 col-md-3 image"><a href="#" title="basse4"><img src="image/bassejazz.jpg" alt="ibanez" class="jazz"></a></div>
-      <div class="col-xs-12 col-md-3 image"><a href="#" title="basse5"></a> <img src="image/bassedimension.jpg" alt="dimension" class="image"></div>
-      <div class="col-xs-12 col-md-3 image"><a href="#" title="basse6"></a> <img src="image/basseibanez.jpg" alt="ibanez" class="stingray"></div>
-      <div class="col-xs-12 col-md-3 image"><a href="#" title="basse7"></a><img src="image/bassewarwick.jpg" alt="ibanez" class="warwick"></div>
-      <div class="col-xs-12 col-md-3 image"><a href="#" title="basse8"></a><img src="image/bassecarton.jpg" alt="ibanez" class="carton"></div>
+
+<div class="body">
+    <!-- carrousel -->
+    <div id="my_carousel" class="carousel slide" data-ride="carousel">
+        <!-- Bulles -->
+        <ol class="carousel-indicators">
+            <li data-target="#my_carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#my_carousel" data-slide-to="1"></li>
+            <li data-target="#my_carousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <!-- Page 1 -->
+            <div class="item active">
+                <div class="carousel-page">
+                    <img src="image/ibanez-srx.jpeg" class="img-responsive" style="margin:0px auto;" />
+                </div>
+                <div class="carousel-caption">
+                    <h2>La polyvalence</h2></div>
+            </div>
+            <!-- Page 2 -->
+            <div class="item">
+                <div class="carousel-page"><img src="image/precision.jpg" class="img-responsive img-rounded" style="margin:0px auto;" /></div>
+                <div class="carousel-caption">
+                    <h2>Le grand Classic</h2></div>
+            </div>
+            <!-- Page 3 -->
+            <div class="item">
+                <div class="carousel-page">
+                    <img src="image/lag.jpg" class="img-responsive img-rounded" style="margin:0px auto;max-height:100%;" />
+                </div>
+                <div class="carousel-caption">
+                    <h2>Spécial Made in Fance</h2></div>
+            </div>
+        </div>
+        <!-- Contrôles -->
+        <a class="left carousel-control" href="#my_carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#my_carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+    <div class="container body">
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-md-3 image">
+            <a href="#" title="basse1" class="btn btn-primary-no-border btn-lg" data-toggle="modal" data-target="#myModal"><img src="image/ibanez-srx.jpeg" alt="ibanez" class="image no-border">
+            </a>
+            <!-- Button trigger modal -->
+            <!-- end of carrousel -->
+
+            <!-- 1st modal -->
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Ibanez SRX</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="image/ibanez-srx.jpeg" alt="Ibanez" class="img-modal">
+                            <h4>Pour un son polyvalent en toute circonstances</h4>
+                            <ul>
+                                <p>Spécifications techniques :</p>
+                                <li>Manche érable SRX4</li>
+                                <li>Corps acajou</li>
+                                <li>Frettes medium</li>
+                                <li>Chevalet Accu-Cast B100</li>
+                                <li>Micro manche PFR-N4</li>
+                                <li>Micro chevalet PFR-B4</li>
+                                <li>EQ EQB-II DX 2-band</li>
+                                <li>Accastillage chromé</li>
+                                <li>Diapason 864mm</li>
+                                <li>Largeur au sillet 38mm</li>
+
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Panier<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-md-3 image">
+            <a href="#" title="basse2" class="btn btn-primary-no-border btn-lg" data-toggle="modal" data-target="#MyModal2"><img src="image/jackson-js2.jpg" alt="Jackson" class="image">
+            </a>
+            <!-- Button trigger modal -->
+
+            <!-- 2nd modal -->
+            <!-- Modal -->
+            <div class="modal fade" id="MyModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Jackson-js2</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="image/jackson-js2.jpg" alt="jackson" class="img-modal">
+                            <h4>L'autre Monde</h4>
+                            <ul>
+                                <p>Spécifications techniques :</p>
+                                <li>Forme Concert</li>
+                                <li>Corps Cèdre indien</li>
+                                <li>Manche érable</li>
+                                <li>Touche palissandre</li>
+                                <li>Diapason 864 mm (34”)</li>
+                                <li>Largeur au sillet 41.3 mm (1.625”)</li>
+                                <li>Rayon de la touche compensé 304.8-406.4mm (12-16")</li>
+                                <li>24 frettes Jumbo</li>
+                                <li>Repères "Shark Fin MOTO"</li>
+                                <li>Mécaniques Standard</li>
+                                <li>Chevalet Jackson® High Mass</li>
+                                <li>Micro manche Jackson® Humbucking Bass</li>
+                                <li>Micro chevalet Jackson® Humbucking Bass</li>
+                                <li>Contrôles master volume, tone, tone</li>
+                                <li>Accastillage noir</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Panier<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-md-3 image">
+            <a href="#" title="basse3" class="btn btn-primary-no-border btn-lg" data-toggle="modal" data-target="#MyModal3"><img src="image/precision.jpg" alt="Fender" class="image">
+            </a>
+            <!-- Button trigger modal -->
+
+            <!-- 3th modal -->
+            <!-- Modal -->
+            <div class="modal fade" id="MyModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Precion</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="image/precision.jpg" alt="Fender" class="img-modal">
+                            <h4>La légende continue</h4>
+                            <ul>
+                                <p>Spécifications techniques :</p>
+                                <li>Corps aulne</li>
+                                <li>Manche érable</li>
+                                <li>Touche érable</li>
+                                <li>Diapason 863.6mm (34")</li>
+                                <li>Largeur au sillet 41.3mm (1.625")</li>
+                                <li>Rayon de la touche 241mm (9.5")</li>
+                                <li>Repères points noirs</li>
+                                <li>20 frettes medium jumbo</li>
+                                <li>Mécaniques Standard ouvertes</li>
+                                <li>Micro Standard Precision Bass split single-coil</li>
+                                <li>Contrôles master volume et master tone</li>
+                                <li>Chevalet Standard Vintage</li>
+                                <li>Accastillage chromé</li>
+
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Panier<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-md-3 image">
+            <a href="#" title="basse4" class="btn btn-primary-no-border btn-lg" data-toggle="modal" data-target="#MyModal4"><img src="image/dimension.jpg" alt="Fender" class="image">
+            </a>
+            <!-- Button trigger modal -->
+
+            <!-- 4th modal -->
+            <!-- Modal -->
+            <div class="modal fade" id="MyModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Dimension</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="image/dimension.jpg" alt="Fender" class="img-modal">
+                            <h4>Le renouveau</h4>
+                            <ul>
+                                <p>Spécifications techniques :</p>
+                                <li>Basse électrique Fender</li>
+                                <li>Modèle Dimension Bass V</li>
+                                <li>Série Mexique Deluxe</li>
+                                <li>Finition Natural</li>
+                                <li>Corps en aulne</li>
+                                <li>Radius de la touche 24.1 cm</li>
+                                <li>Touche érable</li>
+                                <li>21 Frettes médium jumbo</li>
+                                <li>Manche érable</li>
+                                <li>Vernis satin uréthane</li>
+                                <li>Profil du manche forme en C</li>
+                                <li>Largeur au sillet 44.4</li>
+                                <li>Repères de touche incrustés repères point noir</li>
+                                <li>Longueur du diapason 864 mm</li>
+                                <li>Chevalet Fender Hi-Mass chrome-plated zinc saddles</li>
+                                <li>Accastillage nickel/chrome</li>
+                                <li>Sillet en os synthétique</li>
+                                <li>Mécaniques 5-In-Line Die-Cast Mini</li>
+                                <li>Micro position centrale: Dimension humbucking</li>
+                                <li>Eléctronique 18V Preamp with Active 3-Band EQ</li>
+                                <li>Réglage de Mid, Treble, Bass et Volume</li>
+
+
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Panier<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-md-3 image">
+            <a href="#" title="basse5" class="btn btn-primary-no-border btn-lg" data-toggle="modal" data-target="#MyModal5"><img src="image/stingray.jpg" alt="ernie-ball" class="image-responsive">
+            </a>
+            <!-- Button trigger modal -->
+
+            <!-- 5th modal -->
+            <!-- Modal -->
+            <div id="MyModal5" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Stingray</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="image/stingray.jpg" alt="ernie-ball" class="img-modal">
+                            <h4>L'inimitable</h4>
+                            <ul>
+                                <p>Spécifications techniques :</p>
+                                <li>MUSIC MAN Stingray 4 RAY34</li>
+                                <li>SKU Sterling By Music Man 1S-RAY34 PWH</li>
+                                <li>Basse Electrique Solid Body</li>
+                                <li>Fabriquée en Asie</li>
+                                <li>Corps Frêne</li>
+                                <li>Manche vissé en Erable</li>
+                                <li>Touche Erable ou Palissandre</li>
+                                <li>21x frettes</li>
+                                <li>Diapason 34" (86.4 cm)</li>
+                                <li>Radius / rayon de touche 12"</li>
+                                <li>Largeur du manche 1e frette 43mm</li>
+                                <li>Largeur du manche 12e frette 55mm</li>
+                                <li>Micro double-bobinage SBMM Design Alnico Humbucker</li>
+                                <li>Preamp actif</li>
+                                <li>Volume général, grave, medium, aigu</li>
+                                <li>Chevalet SBMM Design Fixed</li>
+                                <li>Mécaniques SBMM Design</li>
+                                <li>Accastillage chrome</li>
+                                <li>Coloris touche Erable : Natural, Ruby red Burst, Pacific Blue Burst</li>
+                                <li>Coloris touche Palissandre : Honey Burst, Black, Pearl White, Stealth Black)</li>
+                                <li>Verni high gloss polyester</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Panier<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-md-3 image">
+            <a href="#" title="basse6" class="btn btn-primary-no-border btn-lg" data-toggle="modal" data-target="#MyModal6"><img src="image/warwick.jpg" alt="warwick" class="image-responsive">
+            </a>
+            <!-- Button trigger modal -->
+
+            <!-- 6th modal -->
+            <!-- Modal -->
+            <div id="MyModal6" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Warwick</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="image/warwick.jpg" alt="warwick" class="img-modal">
+                            <h4>Trés Rock</h4>
+                            <p>Spécifications techniques :</p>
+                            <li>WARWICK Corvette Basic 5-String</li>
+                            <li>Basse électrique solid body 5-cordes</li>
+                            <li>SKU</li>
+                            <li>Série Rockbass</li>
+                            <li>Corps en Aulne</li>
+                            <li>Manche vissé en Erable</li>
+                            <li>Touche Palissandre</li>
+                            <li>24x frettes Extra High Jumbo (largeur 2.9mm, hauteur 1.3mm)</li>
+                            <li>Diapason 34"</li>
+                            <li>Micros actifs MEC J/J</li>
+                            <li>Volume / balance / treble / bass</li>
+                            <li>Chevalet 2-piece Warwick Bridge</li>
+                            <li>Mécaniques Warwick</li>
+                            <li>Sillet Just-A-Nut III</li>
+                            <li>Coloris Honey Violin Transparent</li>
+                            <li>Finition satin</li>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Panier<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-md-3 image">
+            <a href="#" title="basse7" class="btn btn-primary-no-border btn-lg" data-toggle="modal" data-target="#MyModal7"><img src="image/jazzbass.jpg" alt="Fender" class="image-responsive">
+            </a>
+            <!-- Button trigger modal -->
+
+            <!-- 7th modal -->
+            <!-- Modal -->
+            <div id="MyModal7" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Fender</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="image/jazzbass.jpg" alt="Fender" class="img-modal">
+                            <h4>Pour les Jazzman</h4>
+                            <p>Spécifications techniques :</p>
+                            <li>FENDER Aerodyne Jazz Bass</li>
+                            <li>Basse électrique solid body</li>
+                            <li>SKU 025-4505-506</li>
+                            <li>Série Deluxe</li>
+                            <li>Fabriquée au Japon</li>
+                            <li>Corps en Tilleul</li>
+                            <li>Manche vissé en Erable, profil "C"</li>
+                            <li>Touche en Palissandre</li>
+                            <li>20x frettes vintage-style</li>
+                            <li>Diapason 34” (864 mm)</li>
+                            <li>Radius / rayon de touche 7.25” (184.1 mm)</li>
+                            <li>Sillet en os synthétique largeur 1.5” (38.1 mm)</li>
+                            <li>Micro chevalet Fender Standard Single-Coil Jazz Bass</li>
+                            <li>Micro manche Fender Standard Split Single-Coil Precision Bass</li>
+                            <li>Volume 1. (Middle Pickup), Volume 2. (Bridge Pickup), Master Tone</li>
+                            <li>Chevalet Fender 4-Saddle Vintage-Style</li>
+                            <li>Mécaniques Fender Vintage-Style</li>
+                            <li>Coloris Black</li>
+                            <li>Finition brillant</li>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Panier<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-md-3 image">
+            <a href="#" title="basse8" class="btn btn-primary-no-border btn-lg" data-toggle="modal" data-target="#MyModal8"><img src="image/lag.jpg" alt="Lag" class="image-responsive">
+            </a>
+            <!-- Button trigger modal -->
+
+            <!-- 8th Modal -->
+            <!-- Modal -->
+            <div id="MyModal8" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Lag</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="image/lag.jpg" alt="Lag" class="img-modal">
+                            <h4>La ptite française</h4>
+                            <p>Spécifications techniques :</p>
+                            <li>Basse Active 4 cordes</li>
+                            <li>manche 22 frettes</li>
+                            <li>de fabrication Française</li>
+                            <li>Lâg custom type Musicman côté chevalet</li>
+                            <li>micro Lâg custom type Jazz côté manche</li>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Panier<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 
     </div>
 
-  </div>
+</div>
+
+    <footer>
+        <div class="container footer">
+            <ul class="row footer">
+                <li class="col-xs-6 col-lg-4"><a href="#">Contact</a></li>
+                <li class="col-xs-6 col-lg-4"><a href="#">SAV</a></li>
+                <li class="col-xs-6 col-lg-4">fallow us on:
+                    <a href="#" title="facebook"><img src="https://drive.google.com/uc?id=0B4k8ghesOQ69WFZFeFd2WEs0YTA" alt="Facebook" /></a>
+                    <a href="#" title="twitter"><img src="https://drive.google.com/uc?id=0B4k8ghesOQ69VnpKTjlvZkVLN1k" alt="Twitter" /></a>
+                    <a href="#" title="vimeo"><img src="https://drive.google.com/uc?id=0B4k8ghesOQ69ekpWaGlrUmhRYWc" alt="Vimeo" /></a>
+                    <a href="#" title="flickr"><img src="https://drive.google.com/uc?id=0B4k8ghesOQ69bWFFaXI1amVwS1E" alt="Flickr" /></a>
+                    <a href="#" title="rss"><img src="https://drive.google.com/uc?id=0B4k8ghesOQ69X0c4QXdDRFFCQlU" alt="RSS" /></a>
+                </li>
+                <li class="col-xs-6 col-lg-4"><a href="#">FAQ</a></li>
+                <li class="col-xs-6 col-lg-4"><a href="#">plan du site</a></li>
+            </ul>
+
+
+        </div>
+
+
+
+
+    </footer>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="bassejavascript.js"></script>
+
+    </script>
 </body>
-<footer>
-  <div class="container footer">
-    <ul class="row footer">
-      <li class="col-xs-6 col-md-4">Contact</li>
-      <li class="col-xs-6 col-md-4">SAV</li>
-      <li class="col-xs-6 col-md-4">fallow us on:<a href="#" title="facebook"><img src="https://drive.google.com/uc?id=0B4k8ghesOQ69WFZFeFd2WEs0YTA" alt="Facebook" /></a><a href="#" title="twitter"><img src="https://drive.google.com/uc?id=0B4k8ghesOQ69VnpKTjlvZkVLN1k" alt="Twitter" /></a><a href="#" title="vimeo"><img src="https://drive.google.com/uc?id=0B4k8ghesOQ69ekpWaGlrUmhRYWc" alt="Vimeo" /></a><a href="#" title="flickr"><img src="https://drive.google.com/uc?id=0B4k8ghesOQ69bWFFaXI1amVwS1E" alt="Flickr" /></a><a href="#" title="rss"><img src="https://drive.google.com/uc?id=0B4k8ghesOQ69X0c4QXdDRFFCQlU" alt="RSS" /></a></li>
-      <li class="col-xs-6 col-md-4">FAQ</li>
-      <li class="col-xs-6 col-md-4">plan du site</li>
-    </ul>
-
-
-      </div>
-
-
-
-
-</footer>
 
 </html>
